@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
   app: {
-    layoutTransition: { name: 'layout', mode: 'out-in' }
+    layoutTransition: { name: 'page', mode: 'out-in' }
   },
 })

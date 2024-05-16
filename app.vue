@@ -1,13 +1,13 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Site Title` : 'Site Title';
+    return titleChunk ? `${titleChunk} - aapelix.dev` : 'aapelix.dev';
   }
 })
 </script>
 
 <template>
-  <div class="font-mono bg-[#0f0f0f] w-screen h-screen text-[#f3f3f3] overflow-x-hidden">
+  <div class="font-mono bg-[#09090b] w-screen h-screen text-[#f3f3f3] overflow-x-hidden animate-fade-up">
     <NuxtPage />
   </div>
 </template>
@@ -17,17 +17,16 @@ useHead({
   .page-leave-active {
     transition: all 0.4s;
   }
-
   .page-enter-from,
   .page-leave-to {
-    transform: translateY(-20px);
+    opacity: 0;
     filter: blur(1rem);
   }
 
   :root {
     scroll-behavior: smooth;
     font-family: "Noto Sans Mono", monospace;
-    background: #0f0f0f;
+    background: #09090b;
   }
 
   * {
